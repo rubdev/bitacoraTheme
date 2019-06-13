@@ -1,29 +1,32 @@
 <?php
-	/**
-	 * registramos js
-	 */
-	if ( ! function_exists('cdw_scripts')) {
-		function cdw_scripts () {
-			wp_register_script('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', ['jquery']);
-			wp_enqueue_script('bootstrap-js');
+	// Incluir Bootstrap CSS
+    function rdv_bootstrap_css() {
+	    wp_enqueue_style( 'bootstrap_css', 
+  					    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', 
+  					    array(), 
+  					    '4.1.3'); 
+    }
+    add_action( 'wp_enqueue_scripts', 'rdv_bootstrap_css' );
 
-			wp_register_script('cdw-functions', get_template_directory_uri() . '/js/functions.js', ['jquery', 'bootstrap-js']);
-			wp_enqueue_script('cdw-functions');
-		}
-		add_action('wp_enqueue_scripts', 'cdw_scripts');
-	}
+    // Incluir Bootstrap JS y dependencia popper
+    function rdv_bootstrap_js() {
+        wp_enqueue_script( 'popper_js', 
+                        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 
+  					    array(), 
+  					    '1.14.3', 
+  					    true); 
+        wp_enqueue_script( 'bootstrap_js', 
+                        'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', 
+                        array('jquery','popper_js'), 
+                        '4.1.3', 
+                        true); 
+    }
+    add_action( 'wp_enqueue_scripts', 'rdv_bootstrap_js' );
 
-	/**
-	 * registramos css
-	 */
-	if ( ! function_exists('cdw_styles')) {
-		function cdw_styles () {
-			wp_register_style('bootstrap-css', '//bootswatch.com/4/flatly/bootstrap.min.css');
-			wp_enqueue_style('bootstrap-css');
-
-			wp_register_style('cdw-styles', get_template_directory_uri() . '/css/styles.css');
-			wp_enqueue_style('cdw-styles');
-		}
-		add_action('wp_enqueue_scripts', 'cdw_styles');
-	}
+    // CSS Propio
+    function rdv_styles() {
+        wp_register_style( 'rdv_custom_style', get_template_directory_uri().'/style.css');
+        wp_enqueue_style( 'rdv_custom_style' );
+    }
+    add_action( 'wp_enqueue_scripts', 'rdv_styles' );
 ?>
