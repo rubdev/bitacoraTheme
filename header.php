@@ -7,4 +7,4 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- main container init -->
