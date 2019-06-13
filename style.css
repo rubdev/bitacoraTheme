@@ -8,3 +8,9 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: rdv
 */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:600&display=swap');
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+}
