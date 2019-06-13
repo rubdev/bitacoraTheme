@@ -1,4 +1,8 @@
 <?php
+
+    // Navegación
+    require_once('includes/bs4navwalker.php');
+
 	// Incluir Bootstrap CSS
     function rdv_bootstrap_css() {
 	    wp_enqueue_style( 'bootstrap_css', 
@@ -29,4 +33,9 @@
         wp_enqueue_style( 'rdv_custom_style' );
     }
     add_action( 'wp_enqueue_scripts', 'rdv_styles' );
+
+    function rdv_menu() {
+        register_nav_menu( 'top', 'Menú principal' );
+    }
+    add_action( 'init', 'rdv_menu' );
 ?>

@@ -7,4 +7,8 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
-    <div class="container-fluid"> <!-- main container init -->
+    <div class="container"><!-- navbar container init -->
+        <?php include('includes/navbar.php'); ?>
+    </div><!-- navbar container end -->
+    <div class="container"> <!-- main container init -->
+    

@@ -1,14 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-faded justify-content-end">
   <div class="container">
-    <a class="navbar-brand" href="<?php get_home_url( ) ?>">
-    <?php
-        if ( function_exists( 'the_custom_logo' ) ) {
-          the_custom_logo();
-        } else {
-          bloginfo( 'name' );
-        }
-     ?>
-    </a>
+    <a class="navbar-brand" href="<?php get_home_url( ) ?>"><?php bloginfo( 'name' )?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
