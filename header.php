@@ -2,6 +2,7 @@
 <!doctype html>
 <html <?php language_attributes() ?>>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <meta charset="<?php bloginfo( 'charset' ) ?>"/>
     <link rel="pinback" href="<?php bloginfo( 'pinback_url' ) ?>"/>
     <?php wp_head() ?>
