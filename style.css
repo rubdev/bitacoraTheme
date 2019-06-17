@@ -9,12 +9,19 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: rdv
 */
 
+/*******************
+* Reglas globales
+*******************/
 @import url('https://fonts.googleapis.com/css?family=Nunito:600&display=swap');
 
 html, body {
     font-family: 'Nunito', sans-serif;
     min-height: 100vh; 
 }
+
+/*******************
+* Navbar y footer
+*******************/
 
 .rdv-navbar {
     background-color: black;
@@ -25,9 +32,54 @@ html, body {
     color: whitesmoke !important;
 }
 
+#rdv-texto-navbar:hover, .nav-link:hover {
+    color: white !important;
+}
+
 footer {
     bottom: 0;
     background-color: black;
     color: whitesmoke;
 }
 
+/*******************
+* Home
+*******************/
+
+.rdv-main-title {
+    padding: 2rem 0 2rem 1rem;
+    font-size: 3rem;
+}
+
+.card {
+    border: 1px solid #adb5bd;
+    margin-bottom: 1rem;
+}
+
+.rdv-card {
+    background-color: white;
+    border-left: 1rem black solid;
+}
+
+.rdv-card h5 a {
+    color: black;
+}
+
+.rdv-card h5 a:hover {
+    text-decoration: none;
+}
+
+.rdv-button-post {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.rdv-button-post:hover {
+    background-color: black;
+    color: white;
+}
+
+.rdv-button-post:active {
+    background-color: black !important;
+    color: white !important;
+}
