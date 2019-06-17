@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-faded justify-content-end">
+<nav class="navbar navbar-expand-md navbar-light bg-faded justify-content-end rdv-navbar">
   <div class="container">
-    <a class="navbar-brand" href="<?php get_home_url( ) ?>"><?php bloginfo( 'name' )?></a>
+    <a id="rdv-texto-navbar"class="navbar-brand" href="<?php get_home_url( ) ?>"><?php bloginfo( 'name' )?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
