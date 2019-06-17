@@ -13,4 +13,21 @@ Text Domain: rdv
 
 html, body {
     font-family: 'Nunito', sans-serif;
+    min-height: 100vh; 
 }
+
+.rdv-navbar {
+    background-color: black;
+    height: 5rem;
+}
+
+#rdv-texto-navbar, .nav-link {
+    color: whitesmoke !important;
+}
+
+footer {
+    bottom: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
