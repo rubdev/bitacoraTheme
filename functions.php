@@ -38,4 +38,35 @@
         register_nav_menu( 'top', 'Menú principal' );
     }
     add_action( 'init', 'rdv_menu' );
+
+    // registro paginación con bootstrap
+    if ( ! function_exists('rdv_bootstrap_pagination')) {
+        function rdv_bootstrap_pagination() {
+            global $wp_query;
+            $pages = paginate_links( [
+                    'format'       => '?paged=%#%',
+                    'current'      => max( 1, get_query_var( 'paged' ) ),
+                    'total'        => $wp_query->max_num_pages,
+                    'type'         => 'array',
+                    'show_all'     => false,
+                    'end_size'     => 3,
+                    'mid_size'     => 1,
+                    'prev_next'    => true,
+                    'prev_text'    => __( '« Anterior', 'cdw' ),
+                    'next_text'    => __( 'Siguiente »', 'cdw'),
+                    'add_args'     => false
+                ]
+            );
+    
+            if ( is_array( $pages ) ) {
+                $pagination = '<ul class="pagination">';
+                foreach ( $pages as $page ) {
+                    $pagination .= '<li class="page-item" '.(strpos($page, 'current') !== false ? 'active' : '').'"> ' . str_replace( 'page-numbers', 'page-link rdv-page-link', $page ) . '</li>';
+                }
+                $pagination .= '</ul>';
+                return $pagination;
+            }
+            return null;
+        }
+    }
 ?>
