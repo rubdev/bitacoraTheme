@@ -1,11 +1,10 @@
-    <?php wp_footer() ?>
-    <footer>
+        <?php wp_footer() ?>
         <div class="row">
             <div class="col">
-                <p class="text-center">Dont stop, code on! 👨🏻‍💻</p>
+                <footer>
+                    <p class="text-center">Dont stop, code on! 👨🏻‍💻</p>
+                </footer>
             </div>
         </div>
-    </footer>
-    </div> <!-- main container end -->
 </body>
 </html>
