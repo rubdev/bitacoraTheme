@@ -25,7 +25,7 @@ html, body {
 
 .rdv-navbar {
     background-color: black;
-    height: 5rem;
+    height: 6rem;
 }
 
 #rdv-texto-navbar, .nav-link {
@@ -34,6 +34,10 @@ html, body {
 
 #rdv-texto-navbar:hover, .nav-link:hover {
     color: white !important;
+}
+
+#nav-main {
+    padding-top: 2rem;
 }
 
 footer {
@@ -69,9 +73,19 @@ footer {
     text-decoration: none;
 }
 
+#rdv-fecha-post {
+    font-size: .8rem;
+}
+
+#rdv-categorias-post {
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
 .rdv-button-post {
-    background-color: black;
-    color: whitesmoke;
+    background-color: white;
+    border: .1rem solid black;
+    color: black;
 }
 
 .rdv-button-post:hover {
@@ -82,4 +96,14 @@ footer {
 .rdv-button-post:active {
     background-color: black !important;
     color: white !important;
+}
+
+.rdv-page-link {
+    border:0;
+    color: black;
+}
+
+.rdv-page-link:hover, .current {
+    background-color: black;
+    color: white;
 }
