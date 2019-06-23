@@ -131,3 +131,22 @@ footer {
 .rdv-page-style {
     margin: 2rem 2rem 2rem 2rem;
 }
+
+/*******************
+* Contact form
+*******************/
+#rdv-btn-form {
+    background-color: lightblue;
+    border: .1rem solid black;
+    color: black;
+} 
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: none;
+    background-color: yellow;
+}
+
+div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
+    border: none;
+    background-color: red;
+}
