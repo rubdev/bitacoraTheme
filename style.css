@@ -123,3 +123,11 @@ footer {
 .rdv-contenido-post {
     text-align: justify;
 }
+
+/*******************
+* Page
+*******************/
+
+.rdv-page-style {
+    margin: 2rem 2rem 2rem 2rem;
+}
