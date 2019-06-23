@@ -51,7 +51,7 @@ footer {
 *******************/
 
 .rdv-main-title {
-    padding: 2rem 0 2rem 1rem;
+    padding: 2rem 0 2rem 0;
     font-size: 3rem;
 }
 
@@ -106,4 +106,22 @@ footer {
 .rdv-page-link:hover, .current {
     background-color: black;
     color: white;
+}
+
+/*******************
+* Single
+*******************/
+
+.rdv-info-post {
+    background-color: whitesmoke;
+    margin-right: 24rem;
+    margin-left: 24rem;
+}
+
+#rdv-info-post-bottom {
+    margin-bottom: 2.5rem;
+}
+
+.rdv-contenido-post {
+    text-align: justify;
 }
