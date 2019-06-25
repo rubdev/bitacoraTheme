@@ -25,7 +25,7 @@ html, body {
 
 .rdv-navbar {
     background-color: black;
-    height: 6rem;
+    height: 7rem;
 }
 
 #rdv-texto-navbar, .nav-link {
@@ -39,6 +39,7 @@ html, body {
 #nav-main {
     padding-top: 2rem;
 }
+
 
 footer {
     bottom: 0;
@@ -150,3 +151,96 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     border: none;
     background-color: red;
 }
+
+/*******************
+* Medias querys
+*******************/
+
+/*******************
+* Tablets y Ipad
+********************/
+@media (min-width: 768px) and (max-width: 1024px) {   
+    
+    .rdv-toogler {
+        margin: 1rem 0 0 8rem;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #nav-main {
+        width: 8rem;
+        background-color: white;
+        margin-top: -3.5rem;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black !important;
+    }
+
+    #rdv-btn-nav {
+        padding-left: 9.1rem;
+    }
+
+    .rdv-contenedor-principal {
+        margin-top: 2rem;
+    }
+
+    #menu-menu-superior {
+        margin-top: -1rem;
+    }
+
+}
+
+/*******************
+* Móviles
+********************/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .rdv-navbar {
+        height: 12rem;
+    }
+    
+    a#rdv-texto-navbar {
+        font-size: 17px;
+    }
+
+    p#rdv-texto-navbar {
+        font-size: 13px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #rdv-btn-nav {
+        padding-left: 15rem;
+    }
+
+    #nav-main {
+        width: 12rem;
+        background-color: white;
+        text-align: center;
+        margin-left: 2rem;
+        margin-top: -4rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black !important;
+    }
+
+    .rdv-contenedor-principal {
+        margin-top: 2rem;
+    }
+
+    #menu-menu-superior {
+        margin-top: -1rem;
+    }
+}
+    

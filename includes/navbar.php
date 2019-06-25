@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-md navbar-light bg-faded justify-content-end rdv-navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-faded justify-content-end rdv-navbar">
   <div class="container">
     <div class="row">
       <div class="col">
-      <a id="rdv-texto-navbar"class="navbar-brand" href="<?php get_home_url( ) ?>"><?php bloginfo( 'name' )?></a>
+      <a id="rdv-texto-navbar"class="navbar-brand" href="<?php home_url('/') ?>"><?php bloginfo( 'name' )?></a>
       <p id="rdv-texto-navbar"><?php bloginfo( 'description' ) ?></p>
       </div>
       <div class="col">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="rdv-btn-nav" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <?php
@@ -15,7 +15,7 @@
           'theme_location'  => 'top',
           'container'       => 'div',
           'container_id'    => 'nav-main',
-          'container_class' => 'collapse navbar-collapse',
+          'container_class' => 'collapse navbar-collapse rdv-nav-collpase',
           'menu_id'         => false,
           'menu_class'      => 'navbar-nav ml-auto mr-1',
           'depth'           => 2,

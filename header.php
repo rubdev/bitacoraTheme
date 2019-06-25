@@ -11,5 +11,5 @@
     <div class="container"><!-- navbar container init -->
         <?php include('includes/navbar.php'); ?>
     </div><!-- navbar container end -->
-    <div class="container"> <!-- main container init -->
+    <div class="container rdv-contenedor-principal"> <!-- main container init -->
     
