@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-      <a id="rdv-texto-navbar"class="navbar-brand" href="<?php home_url('/') ?>"><?php bloginfo( 'name' )?></a>
+      <a id="rdv-texto-navbar"class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php bloginfo( 'name' )?></a>
       <p id="rdv-texto-navbar"><?php bloginfo( 'description' ) ?></p>
       </div>
       <div class="col">
