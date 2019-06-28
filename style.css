@@ -202,15 +202,15 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
 @media (min-width: 320px) and (max-width: 480px) {
 
     .rdv-navbar {
-        height: 12rem;
+        height: 10rem;
     }
     
     a#rdv-texto-navbar {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     p#rdv-texto-navbar {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .navbar-toggler-icon {
