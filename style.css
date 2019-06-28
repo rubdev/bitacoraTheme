@@ -242,5 +242,9 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     #menu-menu-superior {
         margin-top: -1rem;
     }
+
+    .rdv-main-title {
+        font-size: 1.9rem;
+    }
 }
     
