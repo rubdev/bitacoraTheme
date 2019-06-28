@@ -152,6 +152,11 @@ div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     background-color: red;
 }
 
+.div.wpcf7-mail-sent-ok {
+    border: none;
+    background-color: mediumspringgreen;
+}
+
 /*******************
 * Medias querys
 *******************/
